@@ -8,25 +8,27 @@ int main(){
     for(int i=0;i<len;i++){
         cin>>arr[i];
     }
-    
+   //sol 1 
     int min=arr[0];
-int max=arr[0];
-int c=0;
-for(int i=1;i<len;i++){
-    if(arr[i]>max) {
-        c++;
-        max=arr[i];
-    }
-    else if(arr[i]<min)
-    {
-        min=arr[i];
-        c++;
-    }
-    else
-        continue;
+    int max=arr[0];
+    int c=0;
+    for(int i=1;i<len;i++){
+        if(arr[i]>max) {
+            c++;
+            max=arr[i];
+        }
+        else if(arr[i]<min)
+        {
+            min=arr[i];
+            c++;
+        }
+        else
+            continue;
 
 }
 cout<<c;
+
+//sol2
 
 //     int max=0,min=10000;
 //     for(int i=1;i<len;i++){
